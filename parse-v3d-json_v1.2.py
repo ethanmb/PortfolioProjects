@@ -1,5 +1,4 @@
 #
-#Ethan Mackenzie Brown
 #June 2 2022
 #
 #updated to fix issue where certain measurements had no data for some trials
