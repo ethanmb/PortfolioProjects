@@ -9,11 +9,11 @@ import json
 import csv
 
 
-from tkinter import Tk     # from tkinter import Tk for Python 3.x
+from tkinter import Tk  
 from tkinter.filedialog import askopenfilename
 
-Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
-filename = askopenfilename() # show an "Open" dialog box and return the path to the selected file
+Tk().withdraw()
+filename = askopenfilename()
 
 
 prevFile = ""
@@ -48,12 +48,6 @@ with open (csvToWrite, "w") as x:
                 master.append({"trialName":trialName.replace(".c3d", "")})
                 trialNameReal = trialName.replace(".c3d", "")
 
-            # startInt = trialNameReal.index("0")
-            # trialStringNumber = trialNameReal[startInt:]
-            # print(trialStringNumber)
-            # trialStringNumber = trialStringNumber.replace("b", "")
-            # trialStringNumber = trialStringNumber.replace("B", "")
-            # trialInt = int(trialStringNumber) -1
 
             trialInt = len(master) - 1
             #iterate through signals
